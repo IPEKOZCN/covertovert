@@ -1,18 +1,32 @@
 {
-  "covert_channel_code": "Replace it with the [Code] of chosen covert channel type seen in ODTUClass.",
+  "covert_channel_code": "CSC-PSV-NTP-LI",
   "send": {
     "parameters": {
-      "parameter1": "p1",
-      "parameter2": 1234,
-      "log_file_name": "Example_UDPTimingInterarrivalChannelSender.log"
+      "server_ip": "172.18.0.3",
+      "port_no": 123,
+      "log_file_name": "Sender.log",
+      "chunk_length": 8,
+      "min_max_length": 16,
+      "base":3,
+      "binary":2,
+      "initial_value":0,
+      "the_end":".",
+      "zero": 0,
+      "one": "1",
+      "int_one": 1
     }
   },
   "receive": {
     "parameters": {
-      "parameter1": "p1",
-      "parameter2": 1234,
-      "parameter3": "p3",
-      "log_file_name": "Example_UDPTimingInterarrivalChannelReceiver.log"
+      "port_no": 123,
+      "log_file_name": "Receiver.log",
+      "chunk_length": 9,
+      "base":3,
+      "binary":2,
+      "initial_value":0,
+      "zero": 0,
+      "one": 1
     }
   }
+
 }
